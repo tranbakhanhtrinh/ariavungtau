@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aria Vũng Tàu</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="icon" href="./assets/images/favicon.png" sizes="16x16" type="image/png">
+    <script type="text/javascript">
+        function writeCookie(name, value, days) { var date, expires; if (days) { date = new Date(); date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); expires = "; expires=" + date.toGMTString() } else { expires = "" } document.cookie = name + "=" + value + expires + "; path=/" } function readCookie(name) { var i, c, ca, nameEQ = name + "="; ca = document.cookie.split(';'); for (i = 0; i < ca.length; i++) { c = ca[i]; while (c.charAt(0) == ' ') { c = c.substring(1, c.length) } if (c.indexOf(nameEQ) == 0) { return c.substring(nameEQ.length, c.length) } } return '' }
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        var utm_source = getParameterByName('utm_source');
+        var utm_medium = getParameterByName('utm_medium');
+        var utm_campaign = getParameterByName('utm_campaign');
+        var utm_term = getParameterByName('utm_term');
+        var utm_content = getParameterByName('utm_content');
+
+        if (utm_source != "") {
+            writeCookie('utm_source', utm_source, 30);
+            writeCookie('utm_medium', utm_medium, 30);
+            writeCookie('utm_campaign', utm_campaign, 30);
+            writeCookie('utm_term', utm_term, 30);
+            writeCookie('utm_content', utm_content, 30);
+        }
+    </script>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KRP527K');</script>
+    <!-- End Google Tag Manager -->
+    
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRP527K"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="hotline">
+        <div id="phonering-alo-phoneIcon" class="phonering-alo-phone phonering-alo-green phonering-alo-show">
+            <div class="phonering-alo-ph-circle"></div>
+            <div class="phonering-alo-ph-circle-fill"></div>
+            <div class="phonering-alo-ph-img-circle">
+                <a class="pps-btn-img " title="Liên hệ" href="tel:0934061619"> 
+                    <img id="call_chung" data-toggle="modal" data-target="#exampleModal" src="https://3.bp.blogspot.com/-jipOkVbgvtk/WPd_CdNwOoI/AAAAAAAAEn0/iYoBqhrSHWgSGDOiEvvEzTYa-khhJt9NACLcB/s1600/v8TniL3.png" alt="Liên hệ" width="50" class="img-responsive"/> 
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <figure>
+                    <img src="./assets/images/logo.png" alt="" class="img-fluid mx-auto">
+                </figure>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-0">
+                    <li class="nav-item page-scroll">
+                        <a class="nav-link active" href="#header">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item page-scroll">
+                        <a class="nav-link" href="#loithe">
+                            Lợi thế
+                        </a>
+                    </li>
+                    <li class="nav-item page-scroll">
+                        <a class="nav-link" href="#tongquan">
+                            Tổng quan
+                        </a>
+                    </li>
+                    <li class="nav-item page-scroll">
+                        <a class="nav-link" href="#vitri">
+                            Vị trí
+                        </a>
+                    </li>
+                    <li class="nav-item page-scroll">
+                        <a class="nav-link" href="#cohoi">
+                            Đầu tư
+                        </a>
+                    </li>
+                    <li class="nav-item page-scroll">
+                        <a class="nav-link" href="#tienich">
+                            Tiện ích
+                        </a>
+                    </li>
+                    <li class="nav-item page-scroll">
+                        <a class="nav-link" href="#footer">
+                            Liên Hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <figure class="line_menu">
+                <img src="./assets/images/line_menu.png" alt="" class="img-fluid">
+            </figure>
+        </div>
+    </nav>
+    <section id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 my-auto">
+                    <figure>
+                        <img src="./assets/images/slogan.png" alt="" class="img-fluid d-block">
+                    </figure>
+                </div>
+                <div class="col-md-4 offset-md-5 my-auto">
+                    <div class="form">
+                        <p>
+                            BẠN ĐÃ ĐĂNG KÝ THÀNH CÔNG. <span class="break"></span>
+                            CHÚNG TÔI SẼ LIÊN HỆ BẠN TRONG THỜI GIAN SỚM NHẤT
+                        </p>
+                        <!-- <p>
+                            <span class="bold_text">Cơ hội đầu tư tốt nhất:</span> <span class="break"></span>
+                            Giá chỉ <span class="bold_text">40triệu/m<sup>2</sup></span> - Chủ đầu tư uy tín <span class="break"></span>
+                            Ngân hàng HDBank bảo lãnh <span class="bold_text">60%</span> <span class="break"></span>
+                            Cất nóc ngày <span class="bold_text">22/11/2019</span> <span class="break"></span>
+                        </p> -->
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="loithe">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                    <div class="loithe_left">
+                        <p class="title">
+                            8 Lợi thế của dự án
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <span class="so" style="color: #004c6e;">1.</span>
+                            <p>
+                                Dự án được quy hoạch là căn hộ an cư và nghỉ dưỡng với tầm nhìn hướng biển kết hợp không gian xanh mát.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="so" style="color: #00698c;">2.</span>
+                            <p>
+                                Đa dạng công năng: ở, nghỉ dưỡng, cho thuê dài hạn hoăc ngắn hạn với tỷ suất lợi nhuận cao.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="so" style="color: #007698;">3.</span>
+                            <p>
+                               Quy hoạch trong khu resort riêng tư, biệt lập, sở hữu chiều dài bãi biển riêng  lên đến 400m.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="so" style="color: #0093b6;">4.</span>
+                            <p>
+                                Đầy đủ tiện ích 5 sao duy nhất tại Vũng Tàu: hồ bơi hình Cá heo hướng biển, Bar Seashells by night, quảng trường biển, công viên Bốn Mùa, Club Rooftop trên không, vườn BBQ hướng biển, Cầu tình yêu...
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="so" style="color: #0993b9;">5.</span>
+                            <p>
+                                Pháp lý rõ ràng - sẵn sàng kí hợp đồng mua bán.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="so" style="color: #1787b0;">6.</span>
+                            <p>
+                                Dự án đã hiện hữu - Cất nóc tháng 11/2019
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="so" style="color: #2779a6;">7.</span>
+                            <p>
+                                Chủ đầu tư Cotectasia uy tín, đơn vị phát triển Netland DKR đẳng cấp
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="so" style="color: #336f9f;">8.</span>
+                            <p>
+                                Vị trí đắc địa ngay cửa ngõ TP. Vũng Tàu
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <figure class="btn_dkbaogia btn_dkbaogia_header">
+                                    <img src="./assets/images/btn_dkbaogia.png" alt="" class="img-fluid d-block">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 pad0 my-auto">
+                    <figure>
+                        <img src="./assets/images/loithe.jpg" alt="" class="img-fluid d-block ml-auto mr-0">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tongquan">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 pad0">
+                    <figure>
+                        <img src="./assets/images/tongquan.jpg" alt="" class="img-fluid d-block ml-0 mr-auto">
+                    </figure>
+                </div>
+                <div class="col-md-6 my-auto">
+                    <div class="tongquan_right">
+                        <p class="title">
+                            Tổng quan
+                        </p>
+                        <ul class="list1">
+                            <li>
+                                <span class="bold_text">Dự án:</span> Aria Vũng Tàu        
+                            </li>
+                            <li>
+                                <span class="bold_text">Vị trí:</span> Bãi biển Chí Linh, phường 10, TP. Vũng Tàu
+                            </li>
+                            <li>
+                                <span class="bold_text">Sản phẩm:</span> Căn hộ (Block B)
+                            </li>
+                            <li>
+                                <span class="bold_text">Giá căn hộ:</span> 40triệu/m<sup>2</sup> giá (chưa VAT)cam kết sỡ hữu 50 năm.
+                            </li>
+                            <li>
+                                <span class="bold_text">Diện tích căn hộ:</span>
+                            </li>
+                        </ul>
+                        <ul class="list2">
+                            <li>
+                                + Căn 1PN: 74m2
+                            </li>
+                            <li>
+                                + Căn 2PN: 87 - 176 m2.
+                            </li>
+                            <li>
+                                + Căn 3PN: Lầu 2,5,6,7,8,9,11 ( 160m2)
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <figure class="btn_dkbaogia btn_dkbaogia_header">
+                                    <img src="./assets/images/btn_dkbaogia.png" alt="" class="img-fluid d-block">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="vitri">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 my-auto">
+                    <div class="vitri_left">
+                        <p class="title">
+                            Vị trí
+                        </p>
+                        <p>
+                            Từ Aria Vũng Tàu có thể di chuyển nhanh chóng tới các địa điểm:
+                        </p>
+                        <figure class="thoigian">
+                            <img src="./assets/images/thoigian.png" alt="" class="img-fluid d-block ml-0">
+                        </figure>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <figure class="btn_dkbaogia btn_dkbaogia_ft">
+                                    <img src="./assets/images/btn_dkbaogia.png" alt="" class="img-fluid d-block">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 my-auto pad0">
+                    <figure>
+                        <img src="./assets/images/vitri.jpg" alt="" class="img-fluid d-block mr-0 ml-auto">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cohoi">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 my-auto pad0">
+                    <figure>
+                        <img src="./assets/images/cohoi.jpg" alt="" class="img-fluid d-block ml-0 mr-auto">
+                    </figure>
+                </div>
+                <div class="col-md-6 my-auto">
+
+                    <div class="cohoi_right">
+                        <p class="title">
+                            Cơ hội đầu tư
+                        </p>
+                        <ul>
+                            <li>
+                                Giá 40 triệu/ m<sup>2</sup> (chưa VAT)
+                            </li>
+                            <li>
+                                Thanh toán đợt 1: 30%
+                            </li>
+                            <li>
+                                Ngân hàng HDBank bảo lãnh 60%
+                            </li>
+                            <li>
+                                Cất nóc ngày 22/11/2019
+                            </li>
+                            <li>
+                                Bàn giao full nội thất cao cấp vào quý III/2020
+                            </li>
+                            <li>
+                                Khởi công khách sạn 5 sao vào quý I/2020
+                            </li>
+                            <li>
+                                Cho thuê ngắn hạn và dài hạn với tỷ suất lợi nhuận cao
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <figure class="btn_dkbaogia btn_dkbaogia_ft">
+                                    <img src="./assets/images/btn_dkbaogia.png" alt="" class="img-fluid d-block">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tienich">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="title">
+                        Tiện ích
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 pad0">
+                    <div class="swiper-container" id="tienich_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./assets/images/tienich1.jpg" alt="" class="img-fluid d-block mx-auto">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./assets/images/tienich2.jpg" alt="" class="img-fluid d-block mx-auto">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./assets/images/tienich3.jpg" alt="" class="img-fluid d-block mx-auto">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./assets/images/tienich4.jpg" alt="" class="img-fluid d-block mx-auto">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./assets/images/tienich5.jpg" alt="" class="img-fluid d-block mx-auto">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                    <div class="footer_left">
+                        <figure>
+                            <img src="./assets/images/logo_ft.png" alt="" class="img-fluid d-block">
+                        </figure>
+                        <p class="company">
+                            <span>Công Ty Cổ Phần Bất Động Sản Netland</span> <span class="break"></span>
+                            Số 3 Trần Nhật Duật, Phường Tân Định, Quận 1, TP. Hồ Chí Minh
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-1 my-auto">
+                    <div class="form">
+                        <p>
+                            BẠN ĐÃ ĐĂNG KÝ THÀNH CÔNG. <span class="break"></span>
+                            CHÚNG TÔI SẼ LIÊN HỆ BẠN TRONG THỜI GIAN SỚM NHẤT
+                        </p>
+                        
+                        <!-- <p>
+                            <span class="bold_text">Cơ hội đầu tư tốt nhất:</span> <span class="break"></span>
+                            Giá chỉ <span class="bold_text">40triệu/m<sup>2</sup></span> - Chủ đầu tư uy tín <span class="break"></span>
+                            Ngân hàng HDBank bảo lãnh <span class="bold_text">60%</span> <span class="break"></span>
+                            Cất nóc ngày <span class="bold_text">22/11/2019</span> <span class="break"></span>
+                        </p>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+       
+        var swiper = new Swiper('#tienich_slider', {
+            loop:true,
+            autoplay: {
+                delay: 5000000000,
+                disableOnInteraction:false
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            centeredSlides: true,
+            slidesPerView: 3,
+            spaceBetween: 50,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    spaceBetween: 60,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    spaceBetween: 60,
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
